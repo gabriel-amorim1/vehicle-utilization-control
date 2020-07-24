@@ -3,7 +3,7 @@ exports.up = function(knex) {
         table.increments('id').primary();
 
         table.timestamp('initial_data').notNullable();
-        table.timestamp('final_data').notNullable();
+        table.timestamp('final_data').notNullable().defaultTo("00/00/0000 00:00:00");
         table.text('reason').notNullable();
 
         table.string('driver_id').notNullable();
