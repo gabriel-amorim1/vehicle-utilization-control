@@ -84,7 +84,7 @@ describe('Driver', () => {
     });
 
     //Teste para excluir um motorista pelo id
-    it('should be able to findById Driver', async() => {
+    it('should be able to delete Driver', async() => {
         await request(app)
             .post('/drivers/create')
             .send({

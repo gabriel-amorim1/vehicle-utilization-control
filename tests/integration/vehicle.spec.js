@@ -4,7 +4,7 @@ const connection = require('../../src/database/connection');
 const generateUniqueLicensePlate = require('../../src/utils/generateUniqueLicensePlate');
 
 describe('Vehicle', () => {
-    beforeAll(async() => {
+    beforeEach(async() => {
         await connection.migrate.rollback();
         await connection.migrate.latest();
     });
@@ -98,9 +98,10 @@ describe('Vehicle', () => {
                 color: "preto",
                 brand: "Honda"
         });
-
+        idString = await connection('vehicles').where('license_plate', licensePlate);
+        id = parseInt(idString);
         const response = await request(app)
-            .get('/vehicles/1')
+            .get('/vehicles/')
             .send({
         });
 
