@@ -102,7 +102,7 @@ routes.group("/vehicle_utilizations", (router) => {
         })
     }),VehicleUtilizationsController.finalize);
 
-    //Rota para listar os motorista cadastrados.
+    //Rota para listar as utilizações dos automóveis.
     router.get('/', VehicleUtilizationsController.list);
 });
 
