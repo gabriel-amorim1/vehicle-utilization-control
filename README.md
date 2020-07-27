@@ -33,3 +33,5 @@ Se tudo estiver certo, ao rodar o comando no terminal, deve aparecer algo como:
 Rodar testes
 Para rodar os testes unitários e de integração rode o seguinte comando no terminal:
 $ npm test
+
+Para facilitar os testes deixei o arquivo "Insomnia_2020-07-26.json" na raiz do projeto que pode ser importado no aplicativo Insomnia com todas as rotas e parametros já configurados.
