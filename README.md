@@ -1,5 +1,7 @@
 # vehicle-utilization-control
 
+Serviço de API's para controle da utilização de veículos por motoristas utilizando Node.js
+
 Pré Requisitos
 Ambiente de desenvolvimento configurado com as seguintes ferramentas:
 
